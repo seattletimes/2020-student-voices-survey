@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <%= t.include("partials/_head.html", grunt.data.json) %>
+    <% if (json.project.production && !json.project.embedded) { %>
+      <%= t.include("partials/_dataLayer.html") %>
+      <%= t.include("partials/_gtm.html") %>
+    <% } %>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <% if (json.project.production && !json.project.embedded) { %>
+      <%= t.include("partials/_gtmNoScript.html") %>
+    <% } %>
+    <responsive-child class="interactive">
+      <!-- content goes here -->
+      <div id="buttonHolder">
+        <div class="label">Categories</div>
+
+        <div class="button" data-cat="MentalHealth">Mental Health</div>
+        <div class="button" data-cat="Socializing">Socializing</div>
+        <div class="button" data-cat="OnlineLearning">Online Learning</div>
+        <div class="button" data-cat="College">College</div>
+      </div>
+
+      <div id="quoteHolder">
+        <div id="selectedQuotes"></div>
+      </div>
+
+    </responsive-child>
+
+    <script src="app.js" async></script>
+    <% if (json.project.production) { %>
+    <%= !json.project.embedded ? t.include("partials/_analytics.html") : "" %>
+    <%= t.include("partials/_workHere.html") %>
+    <% } %>
+  </body>
+</html>

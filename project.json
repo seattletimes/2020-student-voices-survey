@@ -1,0 +1,22 @@
+{
+  "s3": {
+    "stage": {
+      "bucket": "projects-staging.seattletimes.com",
+      "path": "adjuvant-watcher"
+    },
+    "live": {
+      "bucket": "projects.seattletimes.com",
+      "path": ""
+    }
+  },
+  "title": "",
+  "description": "",
+  "author": "",
+  "url": "",
+  "post_id": 0,
+  "image": "assets/social.jpg",
+  "sheets": ["1SKdD6ArWqHzWnE0284M146c25PYl_WSq5pCyfJshyy4"],
+  "docs": [],
+  "embedded": true,
+  "production": false
+}

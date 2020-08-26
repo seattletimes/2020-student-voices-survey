@@ -15,17 +15,20 @@
     <responsive-child class="interactive">
       <!-- content goes here -->
       <div id="buttonHolder">
-        <div class="label">Categories</div>
+        <div class="label">Topics</div>
 
-        <div class="button" data-cat="MentalHealth">Mental Health</div>
-        <div class="button" data-cat="Socializing">Socializing</div>
-        <div class="button" data-cat="OnlineLearning">Online Learning</div>
-        <div class="button" data-cat="College">College</div>
+        <div class="button" data-cat="MentalHealth" style="background-color:#FFE9CF">Mental health <span class="buttonTotals"></span></div>
+        <div class="button" data-cat="Socializing" style="background-color:#D15959">Socializing <span class="buttonTotals"></span></div>
+        <div class="button" data-cat="OnlineLearning" style="background-color:#D8894E;">Online learning <span class="buttonTotals"></span></div>
+        <div class="button" data-cat="College" style="background-color:#ffd9d7">College <span class="buttonTotals"></span></div>
       </div>
+
+      <input type="text" id="myInput" placeholder="Filter quotes for a specific word" title="Type in a name">
 
       <div id="quoteHolder">
         <div id="selectedQuotes"></div>
       </div>
+
 
     </responsive-child>
 

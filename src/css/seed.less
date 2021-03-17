@@ -71,7 +71,7 @@
       display: inline;
 
       @media @mobile {
-        font-size: 4px;
+        font-size: 5px;
       }
     }
 
@@ -109,10 +109,21 @@
         width: 200px;
         margin: 15px;
         cursor: pointer;
+
+        @media @mobile {
+          margin: 15px auto;
+        }
       }
 
-      .seeMore { float: right; }
-      .seeLess { float: left; }
+      .seeMore {
+        float: right;
+
+        @media @mobile { float: none; }
+      }
+      .seeLess {
+        float: left;
+        @media @mobile { float: none; }
+      }
     }
   }
 

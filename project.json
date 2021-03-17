@@ -6,7 +6,7 @@
     },
     "live": {
       "bucket": "projects.seattletimes.com",
-      "path": ""
+      "path": "2020/local/student-survey-covid-online-learning"
     }
   },
   "title": "",
@@ -18,5 +18,5 @@
   "sheets": ["1SKdD6ArWqHzWnE0284M146c25PYl_WSq5pCyfJshyy4"],
   "docs": [],
   "embedded": true,
-  "production": false
+  "production": true
 }
